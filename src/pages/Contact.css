@@ -1,0 +1,30 @@
+.emailText {
+  color: black;
+  font-size: 5rem;
+  margin-left: 7rem;
+}
+
+.emailLink {
+  font-size: 5rem;
+  margin-left: 7rem;
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+  .emailLink {
+    font-size: 3rem;
+    margin-left: 7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .emailLink {
+    font-size: 1.5rem; /* Smaller font on mobile */
+    word-wrap: break-word;
+    /* white-space: normal; */
+    overflow-wrap: break-word;
+    max-width: 100%; /* Ensure it doesn't stretch too much */
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+  }
+}

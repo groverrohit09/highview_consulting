@@ -1,0 +1,15 @@
+.about-page {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-top: auto;
+  height: 85vh;
+  width: 100%;
+  color: black;
+  font-size: 2rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+h1 {
+  position: relative;
+}

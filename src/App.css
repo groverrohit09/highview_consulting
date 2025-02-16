@@ -1,38 +1,222 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 .App {
-  text-align: center;
+  font-family: "Noto Sans", sans-serif; /* Apply Noto Sans to the App component */
+
+  color: #e8593f;
+  width: 100vw;
+
+  width: 100%;
+  max-width: 100vw; /* Constrain width to the visible area */
+  overflow-x: hidden; /* Prevent content from overflowing */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Landing-page {
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 85vh;
+  position: relative;
+  align-items: center;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+  width: 100vw;
+  background-color: white;
+  height: 15vh;
+  padding: 1.25rem;
+  /* min-height: 100vh; */
+  /* padding: 20px; */
   display: flex;
+  flex-direction: row;
+  align-items: left;
+  text-align: left;
+  position: relative; /* Allow positioning of child elements relative to this container */
+}
+
+.App-logo {
+  /* position: relative; 
+  top: 20px; 
+  left: 20px; 
+  height: 50px; 
+  width: auto;
+  object-fit: contain; */
+
+  /* HV Consulting logo 1 */
+  /* text-align: left; */
+  position: relative;
+  /* width: 40vw; */
+  height: 60%;
+  left: 0%;
+  top: 0%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.navbar-buttons-group {
+  position: relative;
+  text-align: right;
+  height: 60%;
+  width: 80vw;
+  margin-left: auto;
+}
+
+.navbar-button {
+  padding-left: 1%;
+  /* padding-top: 0%; */
+}
+
+.landing-image {
+  width: 100%; /* Spans the full width of the container */
+  height: 60%; /* Fixed height (adjust this as needed) */
+  object-fit: cover; /* Ensures the image covers the container without distortion */
+}
+
+.landing-text-image {
+  margin: auto;
+  width: 60vw;
+}
+
+.scroll-arrow {
+  height: 5%;
+  width: 3%;
+  margin-top: auto;
+}
+
+.nav-link img {
+  padding: 0.5rem;
+}
+
+.nav-link.active img {
+  border-bottom: 3px solid black; /* Underline effect */
+  padding-bottom: 5px; /* Spacing for better look */
+}
+.nav-links {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #e8593f;
+  transition: 0.3s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Tablets (Portrait & Landscape) */
+@media (min-width: 601px) and (max-width: 1024px) {
+  .App-header {
+    padding: 0.25rem;
   }
-  to {
-    transform: rotate(360deg);
+  .App-logo {
+    height: 60%;
+    width: 50%;
+  }
+  .nav-link img {
+    margin: auto;
+    height: 50%;
+    width: 30%;
   }
 }
+
+/* Styles for mobile screens (width <= 768px) */
+@media (max-width: 600px) {
+  /* .nav-link {
+    display: none; /* Hide navigation links on mobile */
+  /*} */
+  .navbar-buttons-group {
+    display: none;
+  }
+  .App-logo {
+    width: 80%;
+  }
+
+  .nav-link {
+    display: none;
+  }
+
+  .landing-image {
+    width: 100vw;
+    /* height: 60vh;
+    margin-right: -0.7rem; */
+  }
+
+  .landing-text-image {
+    width: 110vw;
+  }
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: black;
+    flex-direction: column;
+    gap: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    z-index: 1;
+  }
+
+  .nav-links.open {
+    display: flex;
+    gap: 20px;
+  }
+
+  .nav-link-mob {
+    text-decoration: none;
+    color: #e8593f;
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .hamburger {
+    position: fixed;
+    /*right: -8rem; */
+    display: flex; /* Show hamburger on mobile */
+    color: #e8593f;
+    margin-left: auto;
+    width: 20vw;
+    margin: auto;
+    margin-top: 1rem;
+    position: relative;
+    padding-left: 4rem;
+    justify-content: center;
+    align-items: center;
+    right: 20px; /* Fixed to the right side */
+    z-index: 100; /* Make sure it's on top */
+  }
+
+  .nav-links {
+    color: #e8593f;
+    font-size: 18px;
+    padding: 10px 20px;
+  }
+
+  /* Hamburger Icon Animation */
+  .rotate-top {
+    transform: rotate(45deg);
+    position: relative;
+    top: 5px;
+  }
+
+  .rotate-bottom {
+    transform: rotate(-45deg);
+    position: relative;
+    bottom: 5px;
+  }
+
+  .hide {
+    opacity: 0;
+  }
+}
+/* Hamburger Icon */

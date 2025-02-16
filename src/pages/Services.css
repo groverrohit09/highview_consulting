@@ -1,0 +1,59 @@
+.services-table {
+  display: flex;
+  color: black;
+  flex-direction: column;
+  width: 100vw;
+  height: 85vh;
+  font-size: large;
+}
+
+h1 {
+  margin-right: auto;
+  margin-left: 3%;
+
+  /* Services_Offered_Heading */
+
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 4rem;
+  line-height: 5.5rem;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #000000;
+}
+
+ul {
+  padding-top: 2rem;
+  padding-left: 3rem;
+}
+td {
+  padding: 0px;
+}
+
+/* Mobile responsive table - 6x1 layout */
+@media (max-width: 768px) {
+  .services-table {
+    display: flex;
+    flex-direction: column; /* Stack rows vertically */
+  }
+
+  tr {
+    display: flex;
+    flex-direction: column; /* Stack the cells inside each row */
+    width: 100%; /* Make each row take full width */
+  }
+
+  td {
+    width: 100%; /* Make each cell take the full width of the container */
+    padding: 15px; /* Adjust padding for mobile */
+  }
+
+  .cell-text {
+    display: flex;
+    flex-direction: column; /* Stack the heading and bullet points vertically */
+  }
+}
