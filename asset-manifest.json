@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/highview_consulting/static/css/main.332a11e3.css",
+    "main.css": "/highview_consulting/static/css/main.d5fc2668.css",
     "main.js": "/highview_consulting/static/js/main.2052d1e6.js",
     "static/js/453.0b9f3eff.chunk.js": "/highview_consulting/static/js/453.0b9f3eff.chunk.js",
     "static/media/logo.png": "/highview_consulting/static/media/logo.ea556f6f0bd9d0ce7fb1.png",
     "static/media/landing-image.jpg": "/highview_consulting/static/media/landing-image.46b653e910f492c3927e.jpg",
     "static/media/landing_text.png": "/highview_consulting/static/media/landing_text.f28458d2e3ef0debc319.png",
     "index.html": "/highview_consulting/index.html",
-    "main.332a11e3.css.map": "/highview_consulting/static/css/main.332a11e3.css.map",
+    "main.d5fc2668.css.map": "/highview_consulting/static/css/main.d5fc2668.css.map",
     "main.2052d1e6.js.map": "/highview_consulting/static/js/main.2052d1e6.js.map",
     "453.0b9f3eff.chunk.js.map": "/highview_consulting/static/js/453.0b9f3eff.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.332a11e3.css",
+    "static/css/main.d5fc2668.css",
     "static/js/main.2052d1e6.js"
   ]
 }
